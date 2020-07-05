@@ -1,5 +1,8 @@
+
 import 'package:flutter/material.dart';
-import 'package:flutter_chat_ui_starter/screens/home_screen.dart';
+import 'package:flutter_chat_ui_starter/screens/splash_screen.dart';
+
+
 
 void main() => runApp(MyApp());
 
@@ -8,11 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'People finder',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.purple,
+        accentColor: Color(0xFFFEF9EB),
       ),
-      home: HomeScreen(),
+      home: MySplashScreen(),
     );
   }
 }
+
